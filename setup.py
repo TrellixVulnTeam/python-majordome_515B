@@ -21,7 +21,7 @@ setup(
     package_data=version['package_data'],
     license='MIT',
     url=repo,
-    download_url=F'{repo}/archive/0.1.0.tar.gz',
+    download_url=F'{repo}/archive/0.1.1.tar.gz',
     include_package_data=True,
     zip_safe=False,
     classifiers=[
