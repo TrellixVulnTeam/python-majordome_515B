@@ -1,3 +1,18 @@
+# ---> Local
+
+# Editor stuff
+.vscode/
+.devcontainer/
+
+# Pytest
+.pytest_cache/
+
+# Local docker
+Dockerfile
+
+# Any sandbox
+sandbox/
+
 # ---> Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
