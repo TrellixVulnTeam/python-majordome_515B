@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 """ Setup support. """
+from pathlib import Path
 from setuptools import setup
 from setuptools import find_packages
 
 pkg = {}
 with open('majordome/version.py') as fp:
     exec(fp.read(), pkg)
+
+root = Path(__file__).resolve().parent
+with open(root / 'README.md', encoding='utf-8') as f:
+    long_description = f.read()
 
 repo = 'https://gogs.sprtmonitor.com/walter/majordome'
 version = pkg['version']
@@ -16,6 +21,8 @@ setup(
     author=pkg['author'],
     author_email=pkg['author_email'],
     description=pkg['description'],
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     keywords=pkg['keywords'],
     version=version,
     install_requires=pkg['install_requires'],
