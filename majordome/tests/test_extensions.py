@@ -22,3 +22,6 @@ def test_dict_get_nested_alright():
 
     sample = dict({'a': 2})
     assert sample.get_nested('a') == 2
+
+    sample = dict({False: 2})
+    assert sample.get_nested(False) == 2
