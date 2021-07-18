@@ -3,25 +3,26 @@
 from setuptools import setup
 from setuptools import find_packages
 
-version = {}
+pkg = {}
 with open('majordome/version.py') as fp:
-    exec(fp.read(), version)
+    exec(fp.read(), pkg)
 
 repo = 'https://gogs.sprtmonitor.com/walter/majordome'
+version = pkg['version']
 
 setup(
-    name=version['name'],
+    name=pkg['name'],
     packages=find_packages(),
-    author=version['author'],
-    author_email=version['author_email'],
-    description=version['description'],
-    keywords=version['keywords'],
-    version=version['version'],
-    install_requires=version['install_requires'],
-    package_data=version['package_data'],
+    author=pkg['author'],
+    author_email=pkg['author_email'],
+    description=pkg['description'],
+    keywords=pkg['keywords'],
+    version=version,
+    install_requires=pkg['install_requires'],
+    package_data=pkg['package_data'],
     license='MIT',
     url=repo,
-    download_url=F'{repo}/archive/0.1.1.tar.gz',
+    download_url=F'{repo}/archive/{version}.tar.gz',
     include_package_data=True,
     zip_safe=False,
     classifiers=[
