@@ -7,6 +7,8 @@ version = {}
 with open('majordome/version.py') as fp:
     exec(fp.read(), version)
 
+repo = 'https://gogs.sprtmonitor.com/walter/majordome'
+
 setup(
     name=version['name'],
     packages=find_packages(),
@@ -18,8 +20,8 @@ setup(
     install_requires=version['install_requires'],
     package_data=version['package_data'],
     license='MIT',
-    url='https://gogs.sprtmonitor.com/walter/majordome',
-    download_url='https://gogs.sprtmonitor.com/walter/majordome/archive/0.1.0.tar.gz',
+    url=repo,
+    download_url=F'{repo}/archive/0.1.0.tar.gz',
     include_package_data=True,
     zip_safe=False,
     classifiers=[
