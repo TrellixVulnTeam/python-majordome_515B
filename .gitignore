@@ -7,6 +7,9 @@
 # Pytest
 .pytest_cache/
 
+# Scripts
+dist.sh
+
 # Local docker
 Dockerfile
 

@@ -19,7 +19,7 @@ setup(
     package_data=version['package_data'],
     license='MIT',
     url='https://gogs.sprtmonitor.com/walter/majordome',
-    download_url='',
+    download_url='https://gogs.sprtmonitor.com/walter/majordome/archive/0.1.0.tar.gz',
     include_package_data=True,
     zip_safe=False,
     classifiers=[
@@ -27,7 +27,7 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent'
+        'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
