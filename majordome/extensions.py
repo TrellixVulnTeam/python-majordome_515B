@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import builtins
 
 
 class ExtendedDict(dict):
@@ -11,15 +10,7 @@ class ExtendedDict(dict):
         if not args or len(args) < 1:
             raise ValueError("No arguments were provided")
 
-        # I don't remmember what edge case this was supposed
-        # to capture but I will temporarilly keep it here.
-        # if not (element := args[0]):
-        #     return None
-
         value = self.get(args[0])
 
         return value if len(args) == 1 else \
-            dict(value).get_nested(*args[1:])
-
-
-builtins.dict = ExtendedDict
+            ExtendedDict(value).get_nested(*args[1:])
