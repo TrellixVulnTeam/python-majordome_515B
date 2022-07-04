@@ -13,11 +13,15 @@ class Capturing(list):
     """
     def __enter__(self):
         self._stdout = sys.stdout
-        sys.stdout = self._stringio = StringIO()
-        sys.stderr = sys.stdout
+        self._stderr = sys.stderr
+        sys.stdout = self._tmpout = StringIO()
+        sys.stderr = self._tmperr = StringIO()
         return self
 
     def __exit__(self, *args):
-        self.extend(self._stringio.getvalue().splitlines())
-        del self._stringio
+        self.extend(self._tmpout.getvalue().splitlines())
+        self.extend(self._tmperr.getvalue().splitlines())
+        del self._tmpout
+        del self._tmperr
         sys.stdout = self._stdout
+        sys.stderr = self._stderr
