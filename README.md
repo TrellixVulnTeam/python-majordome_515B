@@ -2,7 +2,7 @@
 
 _**NOTE: this package is its early stages of development and any interface might change to keep compatibility with future versions. Please wait until it has reached a minimum level of maturity to use it in your projects. Any contributions are welcome.**_
 
-General Python utilities and extended types.
+General Python utilities and extended types: a pool of boilerplate code.
 
 ## Install
 
@@ -12,4 +12,4 @@ If you need to install from sources, for general use simply run from this direct
 
 ## Usage
 
-Samples are provided for every available functionality under [samples](./samples). Documentation coming soon.
+Samples are provided for every available functionality under [samples](./samples/). Documentation coming soon.
