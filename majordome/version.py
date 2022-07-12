@@ -12,6 +12,7 @@ keywords = [
 ]
 
 install_requires = [
+    "cantera>=2.6.0",
     "numpy>=1.19.5",
     "pandas>=1.3.0",
     "numba>=0.53.1"
