@@ -17,7 +17,7 @@ Dockerfile
 sandbox/
 
 # Generated docs
-/docs/source/generated/
+# /docs/source/generated/
 
 # ---> Python
 # Byte-compiled / optimized / DLL files

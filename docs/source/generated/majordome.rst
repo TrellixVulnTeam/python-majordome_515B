@@ -1,0 +1,23 @@
+﻿majordome
+=========
+
+.. automodule:: majordome
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
