@@ -16,6 +16,9 @@ Dockerfile
 # Any sandbox
 sandbox/
 
+# Generated docs
+/docs/source/generated/
+
 # ---> Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
