@@ -16,8 +16,12 @@ import sys
 sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath("..."))
 
-from majordome import __version__
-from majordome import __author__
+try:
+    from majordome import __version__
+    from majordome import __author__
+except ModuleNotFoundError:
+    __version__ = "0.1.2"
+    __author__ = "Walter Dal'Maz Silva"
 
 # -- Project information -----------------------------------------------------
 
