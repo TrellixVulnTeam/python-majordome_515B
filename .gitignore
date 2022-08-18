@@ -19,6 +19,10 @@ sandbox/
 # Generated docs
 /docs/source/generated/
 
+# Generated directories (mkpyenv)
+/embed/
+tmp-*
+
 # ---> Python
 # Byte-compiled / optimized / DLL files
 __pycache__/

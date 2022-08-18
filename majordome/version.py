@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 author = "Walter Dal'Maz Silva"
 author_email = "walter.dalmazsilva@gmail.com"
-version = "0.1.1"
+version = "0.1.2"
 
 name = "majordome"
 description = "General utilities for Python"
@@ -13,9 +13,10 @@ keywords = [
 
 install_requires = [
     "cantera>=2.6.0",
+    "numba>=0.53.1",
     "numpy>=1.19.5",
     "pandas>=1.3.0",
-    "numba>=0.53.1"
+    "requests>=2.25.1"
 ]
 
 package_data = {name: []}
